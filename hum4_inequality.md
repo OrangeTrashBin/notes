@@ -542,5 +542,6 @@ I have tried to set forth the origin and progress of inequality, the establishme
 
 imbecile to lead a wise man, and for a handful of people to gorge themselves on superfluities while the starving multitude lacks necessities. [65] 
 >我已叙述了不平等的起源和进展、政治社会的建立和流弊。我所论述的这些事物，是尽量以仅凭理性的知识就可以从人类本性中推究出来的为限，并未借助于那些对最高权力予以神法上认可的神圣教义。根据我的说明，我们可以断言，在自然状态中，不平等几乎是不存在的。由于人类能力的发展和人类智慧的进步，不平等才获得了它的力量并成长起来；由于私有制和法律的建立，不平等终于变得根深蒂固而成为合法的了。此外，我们还可以断言，仅为实在法所认可的精神上的不平等，每当它与生理上的不平等不相称时，便与自然法相抵触。这种不相称充分决定了我们对流行于一切文明民族之中的那种不平等应持什么看法。因为，一个孩子命令着老年人，一个傻子指导着聪明人，一小撮人拥有许多剩余的东西，而大量的饥民则缺乏生活必需品，这显然是违反自然法的，无论人们给不平等下什么样的定义。
+
 >65 [Cf. Montaigne, Essays, bk. 1, ch. 30, “Of Cannibals.”]
 ### 93
