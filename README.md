@@ -1,5 +1,5 @@
 # 主页
 
-- [Hardware](./hardware)
+- [Hardware](./Hardware)
 - [Computer Science](./CS)
 - [Personal Stuff](./Peronal)
