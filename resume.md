@@ -1,3 +1,0 @@
-- CE
-  - project: cse141l
-  - debug: industry are really looking for

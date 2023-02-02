@@ -1,1 +1,5 @@
-[link](./购票指南)
+# 主页
+
+- [Hardware](./hardware)
+- [Computer Science](./CS)
+- [Personal Stuff](./Peronal)
