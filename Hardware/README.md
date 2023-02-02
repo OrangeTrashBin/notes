@@ -6,3 +6,4 @@
 - [Combinational-Sequential, assign, always_combo, Time units and Modeling](./ece111_03.md)
 - [Reduction And and Module: Port and Paramater](./ece111_05.md)
 - [Continuous Assignment, Conditional Operator, Data Value and Data Types](./ece111_06.md)
+- [Clock Event, always, Procedural Assignment, Delays, Shift Register, Ring Counter and Barrel Register](./ece111_07.md)
