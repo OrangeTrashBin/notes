@@ -4,17 +4,25 @@
 
 We want to prove that seperation property of dijkstra algorithm, that if we have:
 
-$$\mathbb{E}=\{\text{All Nodes Visited}\}\ \ \mathbb{F}=\{\text{All Nodes Reachable but not visited}\}$$
+$$
+\mathbb{E}=\{\text{All Nodes Visited}\}\ \ \mathbb{F}=\{\text{All Nodes Reachable but not visited}\}
+$$
 
-$$\mathbb{U}=\{\text{All Nodes Not reachable}\}\ \ $$
+$$
+\mathbb{U}=\{\text{All Nodes Not reachable}\}\ \ 
+$$
 
 we want to show that:
 
-$$\forall \delta:= \mathbf{e} \to \mathbf{u}, \mathbf{e,u} \in \mathbb{E,U}, \exist \mathbf{f} \in \delta, \mathbf{f} \in \mathbb{F}$$
+$$
+\forall \delta:= \mathbf{e} \to \mathbf{u}, \mathbf{e,u} \in \mathbb{E,U}, \exists \mathbf{f} \in \delta, \mathbf{f} \in \mathbb{F}
+$$
 
 To achieve such goal, we choose to prove by contradiction, assume that there exists a path $$\delta$$ such that:
 
-$$\delta = \mathbf{e} \to \mathbf{u}, \mathbf{e,u} \in \mathbb{E,U}, \forall\mathbf{f} \in \mathbf{F}, \mathbf{f} \notin \delta$$
+$$
+\delta = \mathbf{e} \to \mathbf{u}, \mathbf{e,u} \in \mathbb{E,U}, \forall\mathbf{f} \in \mathbf{F}, \mathbf{f} \notin \delta
+$$
 
 And assume that $\mathbb{N}$ are the set of all states contained in this path:
 
@@ -36,7 +44,7 @@ $$
 
 This indicates that:
 $$
-\exist \mathbf{p} \in \mathbb{P_\epsilon}, p = \mathbf{e_1} \to \mathbf{u_1}
+\exists \mathbf{p} \in \mathbb{P_\epsilon}, p = \mathbf{e_1} \to \mathbf{u_1}
 $$
 
 However, this is not possible because:
@@ -46,4 +54,4 @@ $$
 $$
 
 Thus a contradiction has been created and therefore:
-$$\forall \delta:= \mathbf{e} \to \mathbf{u}, \mathbf{e,u} \in \mathbb{E,U}, \exist \mathbf{f} \in \delta, \mathbf{f} \in \mathbb{F}$$
+$$\forall \delta:= \mathbf{e} \to \mathbf{u}, \mathbf{e,u} \in \mathbb{E,U}, \exists \mathbf{f} \in \delta, \mathbf{f} \in \mathbb{F}$$
