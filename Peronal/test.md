@@ -8,6 +8,8 @@ $$
 \mathbb{E}=\{\text{All Nodes Visited}\}\ \ \mathbb{F}=\{\text{All Nodes Reachable but not visited}\}
 $$
 
+and
+
 $$
 \mathbb{U}=\{\text{All Nodes Not reachable}\}\ \ 
 $$
