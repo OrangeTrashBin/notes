@@ -89,7 +89,7 @@ I pledge to be fair to my classmates and instructors by completing all of my aca
   |ands| Bitwise AND and save | O | 10 | 100 | ands R[x] | R[x] = R[x] AND R[0]
   |jumpf | Alter PC to some given value with fake absolute| C | 11 |00 | jumpf X  | PC = X
   |bne | 	Branch if Not Equal | C | 11 |01 | bne X  | if R[0] != R[1], PC=X
-  |bl | Branch if less | C | 1| 10 | bl X  | if R[0] < R[1], PC = X
+  |bl | Branch if less | C | 11| 10 | bl X  | if R[0] < R[1], PC = X
   |bg | Branch if greater| C | 11 | 11 | bg X | if R[0] > R[1], PC = X
 - Operands
   
@@ -105,19 +105,19 @@ I pledge to be fair to my classmates and instructors by completing all of my aca
   - Jump(Direct)
     - Enabled: Yes
     - Explanationn: Jump to abosolute address
-    - Max. Distance: $2^{12}$ lines. 
+    - Max. Distance: $$2^{12}$$ lines. 
   - branch(Immediate)
     - Enabled: Yes
     - Explanationn: Set PC to relative address
-    - Max. Distance: $2^{5}$ lines. 
+    - Max. Distance: $$2^{5}$$ lines. 
   - save/load(Direct)
     - Enabled: Yes
     - Explanationn: Jump to abosolute address
-    - Max. Distance: $2^{8}$ lines. 
+    - Max. Distance: $$2^{8}$$ lines. 
   - savei/loadi(Immediate)
     - Enabled: Yes
     - Explanationn: Jump to abosolute address
-    - Max. Distance: $2^{5}$ lines. 
+    - Max. Distance: $$2^{5}$$ lines. 
 
 ## Programmer’s Model
 - The way of operation
@@ -410,38 +410,363 @@ void recoverMessage(unsigned int *originalMessage) {
 
 ### Program 3
 ```C
-int program3 (char mem [32*8], char pattern [8])
+int program3(mem[32][8],pattern[8])
 {
-  int count = 0, byteCount=0, intersectCount=0;
-  int flag=0;
-  int i,j,k;
-  for (i=0;i<32; i++) {
-    for(j=0;j<=8−5; j++) {
-      for (k=0;k<5; k++) {
-        if (mem [i*8+j+k] != pattern [k])
-          break;
-      }
-      if (k == 5){
-        count++; // 退出循环后若j的值等于子串的长度,则存在子串 
-        flag=1;
-      }
+    int count = 0,byteCount=0,intersectCount=0;
+    int flag=0;
+    int i,j,k;
+
+    for (i=0;i<32;i++) {
+        for(j=0;j<8-5+1;j++){
+            for (k=0;k<5;k++) {
+                if(mem[i][j+k] != pattern[k]) 
+                    break; 
+            }
+            if (k == 5){ 
+                count++;
+                flag=1;
+            }
+        }
+        byteCount+=flag;
+        flag=0;
     }
-    byteCount +=flag;
-    flag=0;
-  }
-  for (i=0;i<31; i++) {
-    for(j=0;j<=8-5; j++){
-      for (k=0;k<5;k++) {
-        if (mem [4+1*8+j+k] != pattern [k]) 
-          break;
-      }
-      if (k == 5){
-        intersectCount++;//退出循环后若j的值等于子串的长度,则存在子串
-      }
+    for (i=0;i<31;i++) {
+        for(j=0;j<8-5+1;j++){
+            for (k=0;k<5;k++) {
+                if((mem[i][4,7]+mem[i+1][0,3])[j+k] != pattern[k]) 
+                    break; 
+            }
+            if (k == 5){ 
+                intersectCount++; 
+            }
+        }
     }
-  }
-  return {count, byteCount, count+intersectCount}; //answers to part a, part b, part c
+    mem[33]=count;
+    mem[34]=byteCount;
+    mem[35]=count+intersectCount;
+    
 }
+```
+```
+// count=$12=0
+// byteCount=$13=0
+// intersectCount=$14=0
+// flag=$15=0
+
+// i=$3=0
+// loopi: 
+// if i>31:go to loopiend
+
+// j=$4=0
+// loopj: 
+// if j>3:go to loopjend
+
+// k=$5=0
+// loopk:
+// if k>4:go to loopkend
+
+// $6 = mem[i]
+// $7 = pattern
+// $8 = 8b1000_0000 >> j
+// $9 = $8 >> k
+// $10 = $6 & $9
+// $11 = $7 & $8
+// $0 = $10
+// $1 = $11
+// if $0!=$1: go to loopkend
+// k+=1
+// go to loopk
+// loopkend:
+
+// j+=1
+// if k!=5: go to loopj
+// count+=1
+// flag=1
+// go to loopj
+// loopjend:
+
+// byteCount+=flag;
+// flag=0;
+// i+=1
+// go to loopi
+// loopiend:
+
+// mem[35]=count=$11
+// mem[34]=byteCount=$12
+
+// first loop ends
+////////////////////////////////////////////////////////////////
+// second loop begins
+
+// i=$3=0
+// loopi: 
+// if i>30:go to loopiend
+
+// j=$4=0
+// loopj: 
+// if j>3:go to loopjend
+
+// k=$5=0
+// loopk:
+// if k>4:go to loopkend
+
+// $6 = mem[i] << 4
+// $7 = mem[i+1] >> 4
+// $6 = $6 + $7
+// $7 = pattern
+// $8 = 8b1000_0000 >> j
+// $9 = $8 >> k
+// $10 = $6 & $9
+// $11 = $7 & $8
+// $0 = $10
+// $1 = $11
+// if $0!=$1: go to loopkend
+// k+=1
+// go to loopk
+// loopkend:
+
+// j+=1
+// if k!=5: go to loopj
+// intersectCount+=1
+// go to loopj
+// loopjend:
+
+// i+=1
+// go to loopi
+// loopiend:
+
+// mem[35]=count+intersectCount
+```
+
+```asm
+; count=$12=0:
+hsd 12 0
+; byteCount=$13=0
+hsd 13 0
+; intersectCount=$14=0
+hsd 14 0
+; flag=$15=0
+hsd 15 0     
+
+; i=$3=0:
+hsd 3 0
+; loopi:            
+Label: loopi
+; if i>31:go to end
+hsd 1 31
+hsr 0 3
+bg end
+
+; j=$4=0:
+hsd 4 0            
+; loopj:            
+Label: loopj
+; if j>3:go to loopjend
+hsd 1 3
+hsr 0 4
+bg loopjend
+
+; k=$5=0
+hsd 5 0
+; loopk:
+Label: loopk
+; if k>4:go to loopkend
+hsd 1 4
+hsr 0 5
+bg loopkend
+
+; $6=mem[i]
+hsr 0 3            
+loadi 6          
+; $7=pattern
+hsd 0 32          
+loadi 7         
+; $8 = 8b1000_0000 >> j
+hsd 8 128 ;==8b1000_0000
+hsr 0 $4 
+rss $8
+; $9 = $8 >> k
+hsr 9 8
+hsr 0 5
+rss $9   
+; $10 = $6 & $9
+hsr 10 6 
+hsr 0 9 
+ands 10  
+; $11 = $7 & $8
+hsr 11 8 
+hsr 0 7 
+ands 11  
+; $0=$10
+hsr 0 10
+; $1=$11
+hsr 1 11
+; if $0!=$1: go to loopkend
+bne loopkend
+
+; k+=1
+hsd 0 1           
+adds 5
+; go to loopk
+jumpf loopk
+; loopkend:
+Label:loopkend
+
+; j+=1
+hsd 0 1           
+adds 4
+; if k!=5: go to loopj
+hsd 0 5
+hsr 1 5
+bne loopj
+; count+=1
+hsd 0 1           
+adds 12
+; flag=1
+hsd 15 1
+; go to loopj
+jumpf loopj
+; loopjend:
+Label:loopjend
+
+; byteCount+=flag;
+hsr 0 15
+adds 13
+; flag=0;
+hsd 15 0
+; i+=1:
+hsd 0 1            
+adds 3          
+; go to loopi
+jumpf loopi
+; loopiend:
+Label:loopiend
+
+; mem[33]=count
+hsd 0 33
+savei 12
+; mem[34]=byteCount
+hsd 0 34
+savei 13
+
+; first loop ends
+////////////////////////////////////////////////////////////////
+; second loop begins
+
+; count=$12=0:
+hsd 12 0
+; byteCount=$13=0
+hsd 13 0
+; intersectCount=$14=0
+hsd 14 0
+; flag=$15=0
+hsd 15 0     
+
+; i=$3=0:
+hsd 3 0
+; loopi:            
+Label: loopi
+; if i>31:go to end
+hsd 1 31
+hsr 0 3
+bg end
+
+; j=$4=0:
+hsd 4 0            
+; loopj:            
+Label: loopj
+; if j>3:go to loopjend
+hsd 1 3
+hsr 0 4
+bg loopjend
+
+; k=$5=0
+hsd 5 0
+; loopk:
+Label: loopk
+; if k>4:go to loopkend
+hsd 1 4
+hsr 0 5
+bg loopkend
+
+; $6=mem[i]
+hsr 0 3            
+loadi 6       
+; $7 = mem[i+1]
+hsr 1 3
+hsd 0 1
+adds 1
+loadi 7
+; $6 = $6 << 4
+; $7 = $7 >> 4
+hsd 0 4
+lss $6
+rss $7
+; $6 = $6 + $7
+hsr 0 7
+adds 6   
+; $7=pattern
+hsd 0 32          
+loadi 7         
+; $8 = 8b1000_0000 >> j
+hsd 8 128 ;==8b1000_0000
+hsr 0 $4 
+rss $8
+; $9 = $8 >> k
+hsr 9 8
+hsr 0 5
+rss $9   
+; $10 = $6 & $9
+hsr 10 6 
+hsr 0 9 
+ands 10  
+; $11 = $7 & $8
+hsr 11 8 
+hsr 0 7 
+ands 11  
+; $0=$10
+hsr 0 10
+; $1=$11
+hsr 1 11
+; if $0!=$1: go to loopkend
+bne loopkend
+
+; k+=1
+hsd 0 1           
+adds 5
+; go to loopk
+jumpf loopk
+; loopkend:
+Label:loopkend
+
+; j+=1
+hsd 0 1           
+adds 4
+; if k!=5: go to loopj
+hsd 0 5
+hsr 1 5
+bne loopj
+; intersectCount+=1
+hsd 0 1           
+adds 14
+; go to loopj
+jumpf loopj
+; loopjend:
+Label:loopjend
+
+; i+=1:
+hsd 0 1            
+adds 3          
+; go to loopi
+jumpf loopi
+; loopiend:
+Label:loopiend
+
+; mem[35]=count+intersectCount
+hsr 0 12
+adds 14
+hsd 0 35 
+savei 14
 ```
 
 ```python
