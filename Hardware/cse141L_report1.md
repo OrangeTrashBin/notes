@@ -2,6 +2,8 @@
 - Yiju Li, A16637309
 - Qingxin Li, A17202449
 - [TODO]
+
+
 ## TOC
 - [CSE 141L Milestone 1](#cse-141l-milestone-1)
   - [TOC](#toc)
@@ -103,19 +105,19 @@ I pledge to be fair to my classmates and instructors by completing all of my aca
   - Jump(Direct)
     - Enabled: Yes
     - Explanationn: Jump to abosolute address
-    - Max. Distance: $$2^{12}$$ lines. 
+    - Max. Distance: $2^{12}$ lines. 
   - branch(Immediate)
     - Enabled: Yes
     - Explanationn: Set PC to relative address
-    - Max. Distance: $$2^{5}$$ lines. 
+    - Max. Distance: $2^{5}$ lines. 
   - save/load(Direct)
     - Enabled: Yes
     - Explanationn: Jump to abosolute address
-    - Max. Distance: $$2^{8}$$ lines. 
+    - Max. Distance: $2^{8}$ lines. 
   - savei/loadi(Immediate)
     - Enabled: Yes
     - Explanationn: Jump to abosolute address
-    - Max. Distance: $$2^{5}$$ lines. 
+    - Max. Distance: $2^{5}$ lines. 
 
 ## Programmer’s Model
 - The way of operation
