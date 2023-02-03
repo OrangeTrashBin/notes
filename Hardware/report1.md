@@ -1,8 +1,6 @@
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
 # CSE 141L Milestone 1
 - Yiju Li, A16637309
-- [TODO]
+- Qingxin Li, A17202449
 - [TODO]
 ## TOC
 - [CSE 141L Milestone 1](#cse-141l-milestone-1)
@@ -30,15 +28,14 @@ Know and follow the standards of CSE 141L and UCSD.
 I pledge to be fair to my classmates and instructors by completing all of my academic work with integrity. This means that I will respect the standards set by the instructor and institution, be responsible for the consequences of my choices, honestly represent my knowledge and abilities, and be a community member that others can trust to do the right thing even when no one is watching. I will always put learning before grades, and integrity before performance. I pledge to excel with integrity.
 
 - Yiju Li
-- [TODO]
+- Qingxin Li
 - [TODO]
 
 
 ## Team
-
 | Team Name| Members | 
 | --- | --- |
-| The Three Body | Yiju Li, [TODO], [TODO]|
+| The Three Body | Yiju Li, Qingxin Li, [TODO]|
 
 ## Introduction
 - Machine Name
@@ -52,7 +49,7 @@ I pledge to be fair to my classmates and instructors by completing all of my aca
   - The goals of our machine is solely to help our group to achieve A+ for this course.
 
 ## Architectural Overview
-![test](archi.png)
+![test](architecture.drawio.svg)
 
 [//]: <> (To edit the picture above, simply download draw.io integration in VS code)
 
@@ -105,28 +102,24 @@ I pledge to be fair to my classmates and instructors by completing all of my aca
   - Jump(Direct)
     - Enabled: Yes
     - Explanationn: Jump to abosolute address
-    - Max. Distance: $$2^{12}$$ lines. 
+    - Max. Distance: $2^{12}$ lines. 
   - branch(Immediate)
     - Enabled: Yes
     - Explanationn: Set PC to relative address
-    - Max. Distance: $$2^{5}$$ lines. 
+    - Max. Distance: $2^{5}$ lines. 
   - save/load(Direct)
     - Enabled: Yes
     - Explanationn: Jump to abosolute address
-    - Max. Distance: $$2^{8}$$ lines. 
+    - Max. Distance: $2^{8}$ lines. 
   - savei/loadi(Immediate)
     - Enabled: Yes
     - Explanationn: Jump to abosolute address
-    - Max. Distance: $$2^{5}$$ lines. 
-
+    - Max. Distance: $2^{5}$ lines. 
 
 ## Programmer’s Model
 - The way of operation
-  - [TODO]
-- Example
-  - [TODO]
-
-
+    - Due to the limitations on the registers, our machine uses the "load-operations-save-load" model, meaning that we would recommend the programmer seperate the loading behaviours into different steps, instead of loading all the data at once. In other words, our machine requires the knowledge of how the data is structures before the operations.
+  - One could compile the code from ARM/MIPS to Wallfacer(our machine) and vice versa. However, it won't work at all if one just simply copy the code. This is because that we implement with similar logic to ARM/MIPS but with different design, such that there's at most one operand for each instruction.
 ## Program Implementations
 ### Program 1
 ```python
@@ -388,8 +381,27 @@ LOOP  hsr          0   $15
 DONE
 ```
 ### Program 2
-```
-[TODO]
+```C
+unsigned short mem[60];
+
+void recoverMessage(unsigned int *originalMessage) {
+  int i;
+  unsigned int data, errorFlag, errorPos;
+
+  for (i = 0; i < MAX_DATA; i++) {
+    data = mem[30 + i];
+    errorFlag = data >> 14; //isolating the ywo significant bit 
+    errorPos = data & 0x3FFF;//set all bits of the result to 0 except the 14 bit
+
+    if (errorFlag == 0x0000) { // no errors
+      originalMessage[i] = errorPos;
+    } else if (errorFlag == 0x4000) { // single bit error(14 bits)
+      originalMessage[i] = errorPos ^ errorFlag;
+    } else { // double bit error
+      originalMessage[i] = ERROR_STATE;
+    }
+  }
+}
 ```
 ### Program 3
 ```C
@@ -426,7 +438,6 @@ int program3 (char mem [32*8], char pattern [8])
   return {count, byteCount, count+intersectCount}; //answers to part a, part b, part c
 }
 ```
-
 ```python
 def program3():
   def next(location,index): #in-place modifying
