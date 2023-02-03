@@ -21,3 +21,4 @@
 3. [Hamming Code](./cse141L_03.md)
 
 - [Project Writeup](./cse141L_project.md)
+- [Project Milestone1 Report](./CSE141L_report1)
