@@ -539,9 +539,9 @@ int program3(mem[32][8],pattern[8])
 ```
 
 ```asm
-// count=$12=0:
+; count=$12=0:
 hsd 12 0
-// byteCount=$13=0
+; byteCount=$13=0
 hsd 13 0
 // intersectCount=$14=0
 hsd 14 0
