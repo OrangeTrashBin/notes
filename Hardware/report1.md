@@ -426,6 +426,7 @@ int program3 (char mem [32*8], char pattern [8])
   return {count, byteCount, count+intersectCount}; //answers to part a, part b, part c
 }
 ```
+
 ```python
 def program3():
   def next(location,index): #in-place modifying
