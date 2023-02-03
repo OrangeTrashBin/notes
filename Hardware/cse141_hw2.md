@@ -15,7 +15,8 @@ the "rpt" instruction requires two important parameters: [rs] and [branchaddr]. 
 ```
 LOOP:   slt $t0, $0, $t1
         beq $t0, $0, Exit
-        sub $t1, $t1, 1
+        li  $t0, 1
+        sub $t1, $t1, $t0
         j LOOP
 DONE:
 ```
@@ -44,10 +45,13 @@ $$\text{Execution time} = \frac{\text{Number of Cycles}}{\text{Clock Rate}}$$
 $$\text{Execution time} = \frac{2.56*10^9+1.28*10^9*20+2.56*10^8*5}{2Ghz} = 14.72s$$
 - When two processors are used:
 $$\text{Execution time} = \frac{\frac{2.56*10^9}{0.7*2}+\frac{1.28*10^9*20}{0.7*2}+2.56*10^8*5}{2Ghz} = 10.70s$$
+$$\text{Speedup} = \frac{14.72}{10.70}=138\%$$
 - When four processors are used:
 $$\text{Execution time} = \frac{\frac{2.56*10^9}{0.7*4}+\frac{1.28*10^9*20}{0.7*4}+2.56*10^8*5}{2Ghz} = 5.67s$$
+$$\text{Speedup} = \frac{14.72}{5.67}=260\%$$
 - When eight processors are used:
 $$\text{Execution time} = \frac{\frac{2.56*10^9}{0.7*8}+\frac{1.28*10^9*20}{0.7*8}+2.56*10^8*5}{2Ghz} = 3.15s$$
+$$\text{Speedup} = \frac{14.72}{3.15}=467\%$$
 
 ### 6
 Note the Execution time could be written as:
@@ -62,7 +66,7 @@ And therefore such fallacy existed, which means that computer with the largest c
 $$\text{Num of Instructions} = 1.0*10^9 * \frac{0.9}{0.8} *\frac{3}{4}= 0.84 * 10^9$$
 
 ### 8 
-$$\text{speedup} = \frac{\text{old time}}{\text{new time}} = \frac{300s}{300s-80*(1-0.2)}=127\%$$
+$$\text{speedup} = \frac{\text{old time}}{\text{new time}} = \frac{300s}{300s-80*0.2}=106\%$$
 
 ### 9
 $$\text{reduced time needed} = 300s - \frac{300s}{1.25} = 60s$$
@@ -101,7 +105,7 @@ For Branch add unit, the inputs are 0x200000+4 and 32*4.
 Assume the time to finished a certain number of instructions is 
 $$Time_{old} := 1(\text{unit time})$$
 Then the time to finished a certain number of instructions after new technology is:
-$$Time_{new} = \frac{10-1+3}{10}*\frac{1}{1-10\%} = 1.08(\text{unit time})$$
+$$Time_{new} = \frac{10-1+3}{10}/\frac{1}{1-10\%} = 1.08(\text{unit time})$$
 
 And thus the speedup would be:
 $$\text{speedup} = \frac{1}{1.08} = 93\%$$
