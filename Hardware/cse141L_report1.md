@@ -423,7 +423,7 @@ int program3(mem[32][8],pattern[8])
                     break; 
             }
             if (k == 5){ 
-                count++; // 退出循环后若k的值等于子串的长度，则存在子串
+                count++;
                 flag=1;
             }
         }
@@ -437,16 +437,17 @@ int program3(mem[32][8],pattern[8])
                     break; 
             }
             if (k == 5){ 
-                intersectCount++; // 退出循环后若k的值等于子串的长度，则存在子串
+                intersectCount++; 
             }
         }
     }
     mem[33]=count;
     mem[34]=byteCount;
-    mem[35]=intersectCount;
+    mem[35]=count+intersectCount;
     
 }
-
+```
+```
 // count=$12=0
 // byteCount=$13=0
 // intersectCount=$14=0
@@ -534,15 +535,10 @@ int program3(mem[32][8],pattern[8])
 // go to loopi
 // loopiend:
 
-// mem[35]=intersectCount=$14
+// mem[35]=count+intersectCount
+```
 
-
-
-
-
-
-// assembly:
-
+```asm
 // count=$12=0:
 hsd 12 0
 // byteCount=$13=0
