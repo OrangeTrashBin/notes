@@ -1,4 +1,7 @@
-# Test File
+# Random Stuff
+- [Random Stuff](#random-stuff)
+  - [Proof on dijkstra algorithm's seperation property](#proof-on-dijkstra-algorithms-seperation-property)
+
 
 ## Proof on dijkstra algorithm's seperation property
 
@@ -45,6 +48,7 @@ $$
 $$
 
 This indicates that:
+
 $$
 \exists \mathbf{p} \in \mathbb{P_\epsilon}, p = \mathbf{e_1} \to \mathbf{u_1}
 $$
