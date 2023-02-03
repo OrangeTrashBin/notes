@@ -543,226 +543,226 @@ int program3(mem[32][8],pattern[8])
 hsd 12 0
 ; byteCount=$13=0
 hsd 13 0
-// intersectCount=$14=0
+; intersectCount=$14=0
 hsd 14 0
-// flag=$15=0
+; flag=$15=0
 hsd 15 0     
 
-// i=$3=0:
+; i=$3=0:
 hsd 3 0
-// loopi:            
+; loopi:            
 Label: loopi
-// if i>31:go to end
+; if i>31:go to end
 hsd 1 31
 hsr 0 3
 bg end
 
-// j=$4=0:
+; j=$4=0:
 hsd 4 0            
-// loopj:            
+; loopj:            
 Label: loopj
-// if j>3:go to loopjend
+; if j>3:go to loopjend
 hsd 1 3
 hsr 0 4
 bg loopjend
 
-// k=$5=0
+; k=$5=0
 hsd 5 0
-// loopk:
+; loopk:
 Label: loopk
-// if k>4:go to loopkend
+; if k>4:go to loopkend
 hsd 1 4
 hsr 0 5
 bg loopkend
 
-// $6=mem[i]
+; $6=mem[i]
 hsr 0 3            
 loadi 6          
-// $7=pattern
+; $7=pattern
 hsd 0 32          
 loadi 7         
-// $8 = 8b1000_0000 >> j
-hsd 8 128 //==8b1000_0000
+; $8 = 8b1000_0000 >> j
+hsd 8 128 ;==8b1000_0000
 hsr 0 $4 
 rss $8
-// $9 = $8 >> k
+; $9 = $8 >> k
 hsr 9 8
 hsr 0 5
 rss $9   
-// $10 = $6 & $9
+; $10 = $6 & $9
 hsr 10 6 
 hsr 0 9 
 ands 10  
-// $11 = $7 & $8
+; $11 = $7 & $8
 hsr 11 8 
 hsr 0 7 
 ands 11  
-// $0=$10
+; $0=$10
 hsr 0 10
-// $1=$11
+; $1=$11
 hsr 1 11
-// if $0!=$1: go to loopkend
+; if $0!=$1: go to loopkend
 bne loopkend
 
-// k+=1
+; k+=1
 hsd 0 1           
 adds 5
-// go to loopk
+; go to loopk
 jumpf loopk
-// loopkend:
+; loopkend:
 Label:loopkend
 
-// j+=1
+; j+=1
 hsd 0 1           
 adds 4
-// if k!=5: go to loopj
+; if k!=5: go to loopj
 hsd 0 5
 hsr 1 5
 bne loopj
-// count+=1
+; count+=1
 hsd 0 1           
 adds 12
-// flag=1
+; flag=1
 hsd 15 1
-// go to loopj
+; go to loopj
 jumpf loopj
-// loopjend:
+; loopjend:
 Label:loopjend
 
-// byteCount+=flag;
+; byteCount+=flag;
 hsr 0 15
 adds 13
-// flag=0;
+; flag=0;
 hsd 15 0
-// i+=1:
+; i+=1:
 hsd 0 1            
 adds 3          
-// go to loopi
+; go to loopi
 jumpf loopi
-// loopiend:
+; loopiend:
 Label:loopiend
 
-// mem[33]=count
+; mem[33]=count
 hsd 0 33
 savei 12
-// mem[34]=byteCount
+; mem[34]=byteCount
 hsd 0 34
 savei 13
 
-// first loop ends
+; first loop ends
 ////////////////////////////////////////////////////////////////
-// second loop begins
+; second loop begins
 
-// count=$12=0:
+; count=$12=0:
 hsd 12 0
-// byteCount=$13=0
+; byteCount=$13=0
 hsd 13 0
-// intersectCount=$14=0
+; intersectCount=$14=0
 hsd 14 0
-// flag=$15=0
+; flag=$15=0
 hsd 15 0     
 
-// i=$3=0:
+; i=$3=0:
 hsd 3 0
-// loopi:            
+; loopi:            
 Label: loopi
-// if i>31:go to end
+; if i>31:go to end
 hsd 1 31
 hsr 0 3
 bg end
 
-// j=$4=0:
+; j=$4=0:
 hsd 4 0            
-// loopj:            
+; loopj:            
 Label: loopj
-// if j>3:go to loopjend
+; if j>3:go to loopjend
 hsd 1 3
 hsr 0 4
 bg loopjend
 
-// k=$5=0
+; k=$5=0
 hsd 5 0
-// loopk:
+; loopk:
 Label: loopk
-// if k>4:go to loopkend
+; if k>4:go to loopkend
 hsd 1 4
 hsr 0 5
 bg loopkend
 
-// $6=mem[i]
+; $6=mem[i]
 hsr 0 3            
 loadi 6       
-// $7 = mem[i+1]
+; $7 = mem[i+1]
 hsr 1 3
 hsd 0 1
 adds 1
 loadi 7
-// $6 = $6 << 4
-// $7 = $7 >> 4
+; $6 = $6 << 4
+; $7 = $7 >> 4
 hsd 0 4
 lss $6
 rss $7
-// $6 = $6 + $7
+; $6 = $6 + $7
 hsr 0 7
 adds 6   
-// $7=pattern
+; $7=pattern
 hsd 0 32          
 loadi 7         
-// $8 = 8b1000_0000 >> j
-hsd 8 128 //==8b1000_0000
+; $8 = 8b1000_0000 >> j
+hsd 8 128 ;==8b1000_0000
 hsr 0 $4 
 rss $8
-// $9 = $8 >> k
+; $9 = $8 >> k
 hsr 9 8
 hsr 0 5
 rss $9   
-// $10 = $6 & $9
+; $10 = $6 & $9
 hsr 10 6 
 hsr 0 9 
 ands 10  
-// $11 = $7 & $8
+; $11 = $7 & $8
 hsr 11 8 
 hsr 0 7 
 ands 11  
-// $0=$10
+; $0=$10
 hsr 0 10
-// $1=$11
+; $1=$11
 hsr 1 11
-// if $0!=$1: go to loopkend
+; if $0!=$1: go to loopkend
 bne loopkend
 
-// k+=1
+; k+=1
 hsd 0 1           
 adds 5
-// go to loopk
+; go to loopk
 jumpf loopk
-// loopkend:
+; loopkend:
 Label:loopkend
 
-// j+=1
+; j+=1
 hsd 0 1           
 adds 4
-// if k!=5: go to loopj
+; if k!=5: go to loopj
 hsd 0 5
 hsr 1 5
 bne loopj
-// intersectCount+=1
+; intersectCount+=1
 hsd 0 1           
 adds 14
-// go to loopj
+; go to loopj
 jumpf loopj
-// loopjend:
+; loopjend:
 Label:loopjend
 
-// i+=1:
+; i+=1:
 hsd 0 1            
 adds 3          
-// go to loopi
+; go to loopi
 jumpf loopi
-// loopiend:
+; loopiend:
 Label:loopiend
 
-// mem[35]=count+intersectCount
+; mem[35]=count+intersectCount
 hsr 0 12
 adds 14
 hsd 0 35 
