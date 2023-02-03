@@ -14,7 +14,7 @@
 - [Milestone 1 — The ISA](#milestone-1--the-isa)
   - [Milestone 1 Objectives](#milestone-1-objectives)
   - [Milestone 1 Components](#milestone-1-components)
-    - [What to Submit?](#what-to-submit-1)
+  - [What to Submit?](#what-to-submit-1)
 - [Milestone 2 - 9-bit CPU: Register file, ALU, and fetch unit](#milestone-2---9-bit-cpu-register-file-alu-and-fetch-unit)
   - [Milestone 2 Objectives](#milestone-2-objectives)
   - [CPU Design Refreshers and Helpful Tips](#cpu-design-refreshers-and-helpful-tips)
@@ -295,7 +295,7 @@ you make.
         - Program 2
         - Program 3
 
-### What to Submit?
+## What to Submit?
 You will submit a written report that contains all of the required components of Milestone 1. It 
 is your responsibility to make this report clear and well-organized.
 
