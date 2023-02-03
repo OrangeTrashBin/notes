@@ -29,13 +29,13 @@ $$
 \delta = \mathbf{e} \to \mathbf{u}, \mathbf{e,u} \in \mathbb{E,U}, \forall\mathbf{f} \in \mathbf{F}, \mathbf{f} \notin \delta
 $$
 
-And assume that $\mathbb{N}$ are the set of all states contained in this path:
+And assume that $$\mathbb{N}$$ are the set of all states contained in this path:
 
 $$
 \mathbb{N} := \{\mathbf{n},\mathbf{n}\in\delta, \mathbf{n} \text{ is node}\}
 $$
 
-assume that $\mathbb{P}$ are the set of all the direct paths contained in this path:
+assume that $$\mathbb{P}$$ are the set of all the direct paths contained in this path:
 
 $$
 \mathbb{P} := \{\mathbf{p},\mathbf{p}\in\delta, \mathbf{n} \text{ is a direct path, a.k.a., edge}\}
