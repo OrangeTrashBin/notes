@@ -5,7 +5,6 @@
 ## TOC
 - [CSE 141L Milestone 1](#cse-141l-milestone-1)
   - [TOC](#toc)
-- [Test](#test)
   - [Academic Integrity](#academic-integrity)
   - [Team](#team)
   - [Introduction](#introduction)
@@ -16,8 +15,6 @@
     - [Program 1](#program-1)
     - [Program 2](#program-2)
     - [Program 3](#program-3)
-
-# Test
 
 ## Academic Integrity
 
