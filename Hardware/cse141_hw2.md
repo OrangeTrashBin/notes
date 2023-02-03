@@ -28,8 +28,10 @@ ori $t1, $t1, 0X49A4
 ```
 
 ### 4
-The time cycles before using new technology:
+The time cycles before using new technology :
+
 $$500*1+300*10+100*3=3800(\text{million cycles})$$
+
 The time cycles after using new technology:
 $$500*1*(1-0.5)+300*10+100*3=3550(\text{million cycles})$$
 Assume it's 1 unit time per cylce, then the time before using new technology:

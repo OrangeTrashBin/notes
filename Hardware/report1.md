@@ -114,7 +114,9 @@ I pledge to be fair to my classmates and instructors by completing all of my aca
   - savei/loadi(Immediate)
     - Enabled: Yes
     - Explanationn: Jump to abosolute address
-    - Max. Distance: $2^{5}$ lines. 
+    - Max. Distance: $$2^{5}$$ lines. 
+
+$$Test$$
 
 ## Programmer’s Model
 - The way of operation
