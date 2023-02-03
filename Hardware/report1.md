@@ -33,6 +33,7 @@ I pledge to be fair to my classmates and instructors by completing all of my aca
 
 
 ## Team
+
 | Team Name| Members | 
 | --- | --- |
 | The Three Body | Yiju Li, Qingxin Li, [TODO]|
@@ -120,6 +121,7 @@ I pledge to be fair to my classmates and instructors by completing all of my aca
 - The way of operation
     - Due to the limitations on the registers, our machine uses the "load-operations-save-load" model, meaning that we would recommend the programmer seperate the loading behaviours into different steps, instead of loading all the data at once. In other words, our machine requires the knowledge of how the data is structures before the operations.
   - One could compile the code from ARM/MIPS to Wallfacer(our machine) and vice versa. However, it won't work at all if one just simply copy the code. This is because that we implement with similar logic to ARM/MIPS but with different design, such that there's at most one operand for each instruction.
+
 ## Program Implementations
 ### Program 1
 ```python
@@ -403,6 +405,7 @@ void recoverMessage(unsigned int *originalMessage) {
   }
 }
 ```
+
 ### Program 3
 ```C
 int program3 (char mem [32*8], char pattern [8])
@@ -438,6 +441,7 @@ int program3 (char mem [32*8], char pattern [8])
   return {count, byteCount, count+intersectCount}; //answers to part a, part b, part c
 }
 ```
+
 ```python
 def program3():
   def next(location,index): #in-place modifying
