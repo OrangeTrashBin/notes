@@ -11,7 +11,7 @@ $$
 and
 
 $$
-\mathbb{U}=\{\text{All Nodes Not reachable}\}\ \ 
+\mathbb{U}=\{\text{All Nodes Not reachable}\}
 $$
 
 we want to show that:
@@ -56,4 +56,5 @@ $$
 $$
 
 Thus a contradiction has been created and therefore:
+
 $$\forall \delta:= \mathbf{e} \to \mathbf{u}, \mathbf{e,u} \in \mathbb{E,U}, \exists \mathbf{f} \in \delta, \mathbf{f} \in \mathbb{F}$$
