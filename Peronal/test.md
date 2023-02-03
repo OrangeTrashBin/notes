@@ -29,16 +29,16 @@ $$
 \delta = \mathbf{e} \to \mathbf{u}, \mathbf{e,u} \in \mathbb{E,U}, \forall\mathbf{f} \in \mathbf{F}, \mathbf{f} \notin \delta
 $$
 
-And assume that $$\mathbb{N}$$ are the set of all states contained in this path:
+Let us define that $$\mathbb{N}_\delta$$ are the set of all states contained in the path $$\delta$$:
 
 $$
-\mathbb{N} := \{\mathbf{n},\mathbf{n}\in\delta, \mathbf{n} \text{ is node}\}
+\mathbb{N_\delta} := \{\mathbf{n},\mathbf{n}\in\delta, \mathbf{n} \text{ is node}\}
 $$
 
-assume that $$\mathbb{P}$$ are the set of all the direct paths contained in this path:
+assume that $$\mathbb{P}_\delta$$ are the set of all the direct paths contained in the path $$\delta$$:
 
 $$
-\mathbb{P} := \{\mathbf{p},\mathbf{p}\in\delta, \mathbf{n} \text{ is a direct path, a.k.a., edge}\}
+\mathbb{P_\delta} := \{\mathbf{p},\mathbf{p}\in\delta, \mathbf{n} \text{ is a direct path, a.k.a., edge}\}
 $$
 
 And therefore we have path $$\epsilon$$ that's directly from some state in $$\mathbb{E}$$ to $$\mathbb{U}$$:
@@ -56,7 +56,7 @@ $$
 However, this is not possible because:
 
 $$
-\forall \mathbf{n} \leftarrow \mathbf{e_1}, \mathbf{n} \in \mathbb{E}, \mathbf{n} \notin \mathbb{U}
+\forall \mathbf{n} \leftarrow \mathbf{e_1}, \mathbf{n} \in \mathbb{F}, \mathbf{n} \notin \mathbb{U}
 $$
 
 Thus a contradiction has been created and therefore:
