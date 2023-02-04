@@ -1,6 +1,6 @@
 # CSE 141L Milestone 1
 - Yiju Li, A16637309
-- Qingxin Li, A17202449
+- Haochen Wang, A17000549
 - [TODO]
 
 
@@ -30,8 +30,8 @@ Know and follow the standards of CSE 141L and UCSD.
 I pledge to be fair to my classmates and instructors by completing all of my academic work with integrity. This means that I will respect the standards set by the instructor and institution, be responsible for the consequences of my choices, honestly represent my knowledge and abilities, and be a community member that others can trust to do the right thing even when no one is watching. I will always put learning before grades, and integrity before performance. I pledge to excel with integrity.
 
 - Yiju Li
-- Qingxin Li
 - [TODO]
+- Haochen Wang
 
 
 ## Team
