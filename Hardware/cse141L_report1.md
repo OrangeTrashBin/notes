@@ -408,50 +408,86 @@ void recoverMessage(unsigned int *originalMessage) {
 }
 ```
 ```asm
-      hsd 3 0 //r[3] = i = 0
-      hsd 4 0 //r[4] = data = 0
-      hsd 5 0 //r[5] = errorFlag = 0
-      hsd 6 0 //r[6] = errorPos = 0
+      ; r[3] = i = 0
+      hsd 3 0 
+      ;r[4] = data = 0
+      hsd 4 0
+      ;r[5] = errorFlag = 0
+      hsd 5 0
+      ; r[6] = errorPos = 0
+      hsd 6 0
 
 LOOP  
-      hsr 0 $3 //r[0] = r[3] = i
-      [TODO] hsd 1 MAX_DATA-1 //r[1] = MAX_DATA-1
-      bg DONE //if r[0] > r[1], DONE
-      hsd 1 30 //r[1] = 30
-      adds $1 //r[1] = r[1] + r[0] = 30+i
-      hsr 0 $1 //r[0] = r[1] = 30+i
-      loadi $4 //r[4] = data = mem[r[0]] = mem[30+i]
-      hsd 0 14 //r[0] = 14
-      hsr 5 $4 //r[5] = errorFlag = r[4] = data
-      rss $5 //r[5] = errorFlag = r[5] >> r[0] = data >> 14
-      hsr 6 $4 //r[6] = errorPos = r[4] = data
-      hsd 0 16383 //r[0] = 0x3FFF = 16383
-      ands $6 //r[6] = errorPos = r[6] & r[0] = data & 0x3FFF
-      hsr 0 $5 //r[0] = r[5] = errorFlag
-      hsd 1 0 //r[1] = 0
-      bne SINGLE //if r[0] != r[1], go to SINGLE
-      hsr 0 $3 //r[0] = r[3] = i
-      savei $6 //mem[r[0]] mem[i] = r[6] = errorPos
-      jumpf ITERATION //go to ITERATION
+      ; r[0] = r[3] = i
+      hsr 0 $3
+      ; [TODO] r[1] = MAX_DATA-1
+      hsd 1 MAX_DATA-1
+      ; if r[0] > r[1], DONE
+      bg DONE
+      ; r[1] = 30
+      hsd 1 30
+      ; r[1] = r[1] + r[0] = 30+i
+      adds $1
+      ; r[0] = r[1] = 30+i
+      hsr 0 $1
+      ; r[4] = data = mem[r[0]] = mem[30+i]
+      loadi $4
+      ; r[0] = 14
+      hsd 0 14
+      ; r[5] = errorFlag = r[4] = data
+      hsr 5 $4
+      ; r[5] = errorFlag = r[5] >> r[0] = data >> 14
+      rss $5
+      ; r[6] = errorPos = r[4] = data
+      hsr 6 $4
+      ; r[0] = 0x3FFF = 16383
+      hsd 0 16383
+      ; r[6] = errorPos = r[6] & r[0] = data & 0x3FFF
+      ands $6
+      ; r[0] = r[5] = errorFlag
+      hsr 0 $5
+      ; r[1] = 0
+      hsd 1 0
+      ; if r[0] != r[1], go to SINGLE
+      bne SINGLE
+      ; r[0] = r[3] = i
+      hsr 0 $3
+      ; mem[r[0]] mem[i] = r[6] = errorPos
+      savei $6
+      ; go to ITERATION
+      jumpf ITERATION
 
 SINGLE
-      hsr 0 $5 //r[0] = r[5] = errorFlag
-      hsd 1 16384 //r[1] = 0x4000 = 16384
-      bne DOUBLE //if r[0] != r[1], go to DOUBLE
-      hsr 1 $6 //r[1] = r[6] = errorPos
-      xors $1 //r[1] = r[1] ^ r[0] = errorPos ^ errorFlag
-      hsr 0 $3 //r[0] = r[3] = i
-      savei $1 //mem[r[0]] = mem[i] = r[1] = errorPos ^ errorFlag
-      jumpf ITERATION //go to ITERATION
+      ; r[0] = r[5] = errorFlag
+      hsr 0 $5
+      ; r[1] = 0x4000 = 16384
+      hsd 1 16384
+      ; if r[0] != r[1], go to DOUBLE
+      bne DOUBLE
+      ; r[1] = r[6] = errorPos
+      hsr 1 $6
+      ; r[1] = r[1] ^ r[0] = errorPos ^ errorFlag
+      xors $1
+      ; r[0] = r[3] = i
+      hsr 0 $3
+      ; mem[r[0]] = mem[i] = r[1] = errorPos ^ errorFlag
+      savei $1
+      ; go to ITERATION
+      jumpf ITERATION
 
 DOUBLE
-      hsr 0 $3 //r[0] = r[3] = i
-      [TODO] savei $ERROR_STATE //mem[r[0]] = mem[i] = ERROR_STATE
+      ; r[0] = r[3] = i
+      hsr 0 $3
+      ; [TODO] mem[r[0]] = mem[i] = ERROR_STATE
+      savei $ERROR_STATE 
 
 ITERATION
-      hsd 0 1 //r[0] = 1
-      adds $3 //r[3] = r[3] + r[0] = i+1
-      jumpf LOOP //go to LOOP
+      ; r[0] = 1
+      hsd 0 1
+      ; r[3] = r[3] + r[0] = i+1
+      adds $3
+      ; go to LOOP
+      jumpf LOOP
 
 DONE
 ```
