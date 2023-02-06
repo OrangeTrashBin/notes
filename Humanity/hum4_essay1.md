@@ -95,3 +95,14 @@ Conclusion: Sum up the main arguments of the essay and provide a final conclusio
 "The power of the legislative, being derived from the people, is supreme over all other powers." (Two Treatises of Government, Chapter 2)
 
 "The great end of men's entering into society, being the enjoyment of their properties in peace and safety, and the preservation of their lives, liberties, and estates, which I call by the general name, property." (Two Treatises of Government, Chapter 2)
+
+- [92]当他身居王位时，或者会找出学说和宗教来为他加于他的臣民的一切行为辩解，而刀剑可以立刻使一切敢于责难他的人们保持缄默
+- [8]而理性和公道的规则正是上帝为人类的相互安全所设置的人类行为的尺度，所以谁玩忽和破坏了保障人类不受损害和暴力的约束，谁就对于人类是危险的。
+- [11]因此，在自然状态中，人人都有处死一个杀人犯的权力，以杀一儆百来制止他人犯同样的无法补偿的损害行为，同时也是为了保障人们不受罪犯的侵犯，这个罪犯既已绝灭理性——上帝赐给人类的共同准则——以他对另一个人所施加的不义暴力和残杀而向全人类宣战，因而可以当作狮子或老虎加以毁灭，当作人类不能与之共处和不能有安全保障的一种野兽加以毁灭。
+- [13]所以上帝确曾用政府来约束人们的偏私和暴力
+- [21]如果人世间没有裁判者，那么只能诉诸天上的上帝。
+- [25]不论我们就自然理性来说，人类一出生即享有生存权利，因而可以享用肉食和饮料以及自然所供应的以维持他们的生存的其他物品；或者就上帝的启示来说，上帝如何把世界上的东西给予亚当、给予挪亚和他的儿子们
+- [26]上帝既将世界给予人类共有，亦给予他们以理性，让他们为了生活和便利的最大好处而加以利用。土地和其中的一切，都是给人们用来维持他们的生存和舒适生活的。
+- [34]上帝将世界给予人类所共有；但是，既然他将它给予人类是为了他们的利益，为了使他们尽可能从它获得生活的最大便利，就不能假设上帝的意图是要使世界永远归公共所有而不加以耕植。
+- [32]上帝和人的理性指示他垦殖土地，这就是说，为了生活需要而改良土地，从而把属于他的东西、即劳动施加于土地之上。谁服从了上帝的命令对土地的任何部分加以开拓、耕耘和播种，他就在上面增加了原来属于他所有的某种东西，这种所有物是旁人无权要求的，如果加以夺取，就不能不造成损害。
+- [35]所以上帝命令人开拓土地，从而给人在这范围内将土地拨归私用的权力
