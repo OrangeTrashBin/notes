@@ -97,10 +97,15 @@ I pledge to be fair to my classmates and instructors by completing all of my aca
   | --- | --- |---
   | Preparing Registers | 0,1 | --- | 
   |Zero Register | 2 | --- |
-  | General Purpose Registers | 3-31| --- |
+  | General Purpose Registers | 3-15| --- |
 - Branch Operations
   
-  TODO. What types of branches are supported? How are the target addresses calculated? What is the maximum branch distance supported? How do you accommodate large jumps?
+  There are three types of branching operation that is supported by our machine:
+  - `bne`
+  - `bl`
+  - `bg`
+  
+  The address of these braches are calculated relatively, and the maximum distance supoorted is $$2^5$$ lines, currently.
 - Addressing
   - Jump(Direct)
     - Enabled: Yes
@@ -416,6 +421,8 @@ void recoverMessage(unsigned int *originalMessage) {
       hsd 5 0
       ; r[6] = errorPos = 0
       hsd 6 0
+      ;
+      DEFINE MAX_DATA=15
 
 LOOP  
       ; r[0] = r[3] = i
