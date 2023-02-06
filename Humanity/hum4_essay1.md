@@ -13,6 +13,14 @@
     - [Quotes: Religion](#quotes-religion)
     - [Quotes: all](#quotes-all)
   - [Humanity Essay Format](#humanity-essay-format)
+    - [Essay Format](#essay-format)
+    - [Citation](#citation)
+    - [Prose Quotation](#prose-quotation)
+  - [Thesis Statement](#thesis-statement)
+    - [Components of a Thesis](#components-of-a-thesis)
+    - [Guidelines for Writing an Effective Thesis](#guidelines-for-writing-an-effective-thesis)
+    - [Qualities of an effective thesis](#qualities-of-an-effective-thesis)
+    - [Introduction](#introduction)
 
 ## Prompt
 - Write a thesis-based essay that responds to the following question: Which assumptions in 
@@ -155,3 +163,149 @@ This structure provides a comprehensive outline for a 7-page essay, allowing you
 - [35]所以上帝命令人开拓土地，从而给人在这范围内将土地拨归私用的权力
 
 ## Humanity Essay Format
+
+### Essay Format
+- Paper
+  - Use standard-sized paper (8 1⁄2" x 11").
+- Margins
+  - 1" on all four sides of the paper.
+- Page Numbers
+  - In the top right corner, number the pages as follows: "Last Name, p3". Do not number the first page.
+- Font
+  - Use Times New Roman 12pt.
+- Double-space everything except longer, indented quotations (see Quotations).
+- Title
+  - Do not include a separate title page. Put the title and your name at the top of the first page. No other information (PID, section, etc.) is necessary. Then skip four lines (two double-spaced lines) and start your essay.
+- No Secondary Sources
+  - Do not include a Works Cited page. In Humanities, only use the assigned materials.
+- Referring to Works. 
+  - Italicize the titles of long works (including novels, plays, books of history or philosophy, and long poems) and put quotation marks around the titles of short works (essays, short stories, articles, and short poems).
+- Indent Paragraphs. 
+  - Indent all paragraphs five spaces (1 standard tab). Do not add space between paragraphs.
+- Humanities reserves the right to refuse to accept or to penalize improperly formatted papers.
+
+### Citation
+- Format the first citation of a text as follows: (Author's last name, Title, Location) 
+  > Ex1. (Shakespeare, *The Tempest*, V, 1.205-213)
+
+  > Ex2. (Montaigne, "On Cannibals," p. 86-87)
+
+- Abbreviate citations after the first by using either the author's last name or the title (shortened if it is long) and the location in the text.
+  > Ex1. (Shakespeare, I, 2.351) or (*Tempest*, I, 2.351)
+
+  >Ex2. (Montaigne, p. 88) or ("Cannibals," p. 88)
+
+  Exception: If your sentence includes the author's name or the title of the text you are quoting, then you can leave that information out of the citation.
+
+- **Titles**. Italicize[斜体] the title of long works. Use quotation marks for shorter works.
+
+  Exception. Religious scriptures are neither italicized nor placed in quotation marks. This is the case for the titles of the complete work (Bible, Quran, and Bhagavad Gita, etc.) as well as the books within the work (Genesis, Jonah, and 1 Corinthians, etc.).
+
+- **Location**. Should you use the page number or some other means of locating the quotation you use? The rule is to use the most universal location reference available to you. For many texts, the page number to the edition you are using is the best available option. There are some common exceptions:
+
+- **The Bible**, or similarly formatted scriptures. Use the chapter and verse, separated by either a colon or a period.
+    > Ex. (Job 1:1) or (1 Corinthians 13.4-7)
+- **Poetry** is referenced by line number.
+    > Ex. (Eliot, "The Waste Land," 433) & (Heaney, "Follower,” 4-6)
+- **Epic Poetry**. Include the book in addition to the line number.
+    > Ex. (Homer, *Odyssey*, 24.284) or (Milton, *Paradise Lost*, IV.51-57)
+- **Theatre**. When citing a play, the method depends on the format. When available, use the act and scene, and if in verse, the line number.
+    >Ex. (Sophocles, *Antigone*, 684-685) & (Shakespeare, *Hamlet*, III, 1.56-60)
+### Prose Quotation
+
+
+- Shorter, embedded quotations
+    - The citation goes outside the enclosing quotation mark and before the period.
+    - Use a comma or colon to set a quotation off from the rest of the sentence if it is an independent clause.
+        >Ex. Machiavelli argues of a prince, "he must learn from the fox and the lion; because the lion is defenseless against traps and a fox is defenseless against wolves" (The Prince, p. 56).
+    - Do not use a comma before the quotation when it is grammatically integrated into your sentence.
+        >Job is described as "blameless and upright, one who feared God, and turned away from evil" (Job 1.1).
+
+- Longer, indented quotations (block quotations)
+    - Longer quotations should be single-spaced and indented. A good definition of long is more than three lines of poetry or four lines of prose.
+    - Indent 10 spaces (2 standard tabs).
+    - Since the indentation represents a break in your prose, the passage should be set off with a colon.
+    - Do not surround the passage with quotation marks. Indenting takes their place.
+    - Place the citation on the line below the quoted passage, outside the ending punctuation, and toward the right margin.
+
+    > Ex1. During his trial, recognizing that the jury will not understand or appreciate his reasons for acting the way he does, Socrates states:
+
+    > [I]If I say that it is the greatest good for a man to discuss virtue every day as well as those other things you hear me conversing about and testing myself and others because the unexamined life is not worth living for men, you will believe me even less.(Plato, Apology 38a)
+
+    ![](assets/hum4_essay1_01.png)
+## Thesis Statement
+The success of your argument depends on your thesis. A thesis is the central claim that you will argue for in your essay. In a short essay, the thesis should be presented in the first paragraph.
+
+An effective thesis guides the argument. The thesis makes a claim for which you present evidence to persuade the reader that the claim is right. A strong, clear, and precise thesis leads to a strongly argued essay, while a weak or overly general thesis leads to an essay without clear focus.
+
+### Components of a Thesis
+There are many ways to explain what makes a thesis complete. How you divide the parts is less important than making sure your thesis articulates an argument that shapes and guides your essay. The following three components are one way to think about a complete thesis:
+- **Position**. Does your thesis take a clear position on the question the prompt is asking? This requires more than sharing a topic with the prompt. Are you responding directly to the issues and the specific question it asks?
+- **Claim**. The heart of the thesis describes what specific elements of the text you will be using to make your argument. The claim is more than a recitation of the facts from the text (that would be a summary). The claim should connect many of the text's facts together. What patterns do you see in the text?
+- **Claim Clarification**. A complete thesis shows why the claim you made is reasonable. How do we know the connection you identified is meaningful? Does your claim connect it to any of the themes or values of the text as a whole? These connections can make for stronger claims.
+
+
+Let's work through an example:
+>Sample Prompt. Achilles is reputed to be the greatest hero in the Trojan War, but his behavior in the Iliad suggests he has become disenchanted by war. Does Achilles' behavior undermine the heroic ethic?
+- **Position**. There are two basic positions available to you in response to the prompt. Yes, Achilles undermines the heroic ethic. Or no, he does not. Your thesis does not need to argue that everything Achilles does undermines the heroic ethic (or does not), but your thesis should clearly work from one side or the other and avoid ambivalence like "sometimes he does, sometimes he doesn't." When taking a position, ask yourself a question like: On the whole, do Achilles' actions undermine the heroic ethic? Let's assume you decide yes.
+- **Claim**. There are many possibilities here. The essay will be about Achilles and the heroic ethic. The claim should connect the two through the specifics you will discuss.
+
+    > Ex. By refusing to listen to Greek leadership and his friends, Achilles undermines the heroic ethic.
+- **Claim Clarification**. Make your claim more substantial. What does refusing to listen say about Achilles? About the heroic ethic in Homer's epics? The goal is to show why the refusal to listen undermines the heroic ethic.
+    >Ex. By refusing to listen to Greek leadership and his friends, Achilles undermines the heroic ethic. By not listening, he rejects the relationships of trust that sustain the heroic system.
+
+How the Argument Proceeds. The reader will expect that this essay will discuss examples that will show that the heroic ethic is based on trust and that when Achilles refuses to listen to others it is because he no longer trusts them.
+
+### Guidelines for Writing an Effective Thesis
+- **Specificity**. An effective thesis does more than describe the general topic; it makes a specific argument.
+
+    > Poor thesis. This essay considers Achilles and the heroic ethic.
+
+    "This essay considers" signals the introduction of a topical discussion or statement of procedure, not an argument. It is an unnecessary, indirect statement. Get directly into the substance of the argument.
+
+    > Improved but incomplete thesis. Achilles' behavior consistently undermines the heroic ethic.
+
+    There is an argumentative claim here, but it lacks the specifics necessary to show how and why Achilles undermines the ethic.
+
+    > Complete thesis. By refusing to listen to Greek leadership and his friends,Achilles undermines the heroic ethic. By not listening, he rejects the relationships of trust that sustain the heroic system.
+
+    The argumentative claim from the previous version remains, but it is now filled out with specifics: listening to others and trust relationships. It narrows the subject and focuses the argument in a way that the reader can understand.
+
+
+
+### Qualities of an effective thesis
+- **The heart, not just the start**. Your thesis should articulate the argument you will defend. It is not a springboard for talking generally about some subject.
+- **Concise**. The thesis should be identifiable in the introduction, and it should be as concise as possible. Sometimes it takes more than one sentence to state your argument clearly. That is okay. If it takes more than two sentences in a short essay, that is a sign that your argument lacks sufficient focus.
+- **Precise**. Precision comes from including specific information and being clear about the relationship between the different parts of the thesis.
+- **Worth arguing**. An argument worth having is one in which reasonable people might reach different conclusions. You are arguing because you have to persuade the reader to adopt your view of the issue. Avoid arguments that are obvious.
+    > Ex. Achilles is the greatest hero in Greece.
+    Homer tells us often that this is the case; it is undeniable if you have read the Iliad. Test your argument. Ask yourself, "So what?" Is your argument showing the reader something interesting about the text you are discussing?
+- **Unified argument**. Your thesis should present a unified argument. The split thesis and list thesis are two common forms that arguments without unity take.
+    - Split theses occur if you compare apples and oranges. Yes, they are both fruit, but do they have anything substantive worth comparing?
+        > Ex. In the Gospel of Matthew, Jesus thinks piety is helping the poor and sick, and in the Aeneid, Aeneas thinks piety is listening to the gods.
+
+        This essay will argue about piety in the two texts, but the thesis provides no specific terms of comparison between Jesus and Aeneas. The essay will be two mini-essays: one on Jesus and piety, and another on Aeneas and piety. Your challenge is to figure out how to talk about the two of them together throughout the essay.
+    - List theses occur if you allow the themes or main points of discussion in your essay to stand-in for the explanation. A list of things does not add up to an explanation.
+        > Ex. Abraham deserves God's favor because he obeyed when God called him, governed his family well, and did not commit any major offences against God.
+        
+        It is possible to see how these three claims about Abraham might be related to his deserving God's favor, but alone, they do not show why he deserves it. The thesis must push deeper and articulate something that unites these three claims. Are these three claims a subset of a principle or value that makes Abraham special?
+
+### Introduction
+
+In a short essay, the thesis should appear in the first paragraph. Its placement in the paragraph depends on style and audience. The introduction should be concise. If it stretches over a page, something has gone wrong. In Humanities, assume that your reader is already familiar with the assignment, the texts, and the lectures. This shared familiarity means you do not need to restate the entire prompt, to give historical and biographical information about the texts, or to convince the reader that the topic itself is valuable. You can get directly to the matter at hand and begin presenting the information necessary for understanding your thesis.
+- Avoid the over-general first sentence. It can be difficult to start an essay. One common shortcut to avoid is the grandiose statement about the universe, humanity, or history. These claims are uninteresting if true, and more often than not, they are questionable opinions masked as universal truths.
+    > Ex. Since the beginning of time, humans have wanted to honor the gods.
+
+    Have they really? Is this essay about archaeological discoveries in the oldest known cultural sites? If not, then start with the specific context of your essay.
+- Guide the reader. Writers often wonder where the thesis statement should go in the introduction. Should there be anything before or after the thesis
+statement? The purpose of the introduction is to guide the reader, so that by the end of the paragraph, he or she knows what your subject is and what you are arguing about it. To determine what goes in the introduction, ask yourself, "Is there any further guidance the reader needs, either before or after the thesis?" If so, put it in. Perhaps there is a term in your thesis that needs to be defined, or perhaps your reader needs a sense of how the paper will proceed. This "roadmap" should not be long or detailed, but it should signal to the reader what the main points of discussion will be. Here is an example:
+
+
+    > Homer's political ideas are based in a natural hierarchy, which is very different from the universal equality valued by modern democracies. I will show Homer's reliance on hierarchy and rejection of equality are evident in his pictures of good leadership, his accounts of social cooperation, and his dislike of democracy, by which I mean the direct of rule of a people as a whole.
+    
+    Let's break that down:
+    - Thesis: Homer's political ideas are based in a natural hierarchy, which is opposed to the universal equality valued by modern democracies.
+    - Roadmap: I will show Homer's reliance on hierarchy and rejection of universal equality are evident in his pictures of good leadership, his accounts of social cooperation, and his dislike of democracy
+    - Definition: by which I mean the direct of rule of a people as a whole.
+    - 
+The introduction should not include information just to make it "fuller." Consider what is necessary to introduce your argument and put it in the proper context. Nothing more is necessary. In some cases, the introduction might only consist of the thesis statement.
