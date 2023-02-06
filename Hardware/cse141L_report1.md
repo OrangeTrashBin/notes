@@ -100,7 +100,12 @@ I pledge to be fair to my classmates and instructors by completing all of my aca
   | General Purpose Registers | 3-31| --- |
 - Branch Operations
   
-  TODO. What types of branches are supported? How are the target addresses calculated? What is the maximum branch distance supported? How do you accommodate large jumps?
+  There are three types of branching operation that is supported by our machine:
+  - `bne`
+  - `bl`
+  - `bg`
+  
+  The address of these braches are calculated relatively, and the maximum distance supoorted is $$2^$$ lines, currently.
 - Addressing
   - Jump(Direct)
     - Enabled: Yes
