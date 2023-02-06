@@ -12,6 +12,7 @@
     - [Structure: 2](#structure-2)
     - [Quotes: Religion](#quotes-religion)
     - [Quotes: all](#quotes-all)
+  - [Humanity Essay Format](#humanity-essay-format)
 
 ## Prompt
 - Write a thesis-based essay that responds to the following question: Which assumptions in 
@@ -152,3 +153,5 @@ This structure provides a comprehensive outline for a 7-page essay, allowing you
 - [34]上帝将世界给予人类所共有；但是，既然他将它给予人类是为了他们的利益，为了使他们尽可能从它获得生活的最大便利，就不能假设上帝的意图是要使世界永远归公共所有而不加以耕植。
 - [32]上帝和人的理性指示他垦殖土地，这就是说，为了生活需要而改良土地，从而把属于他的东西、即劳动施加于土地之上。谁服从了上帝的命令对土地的任何部分加以开拓、耕耘和播种，他就在上面增加了原来属于他所有的某种东西，这种所有物是旁人无权要求的，如果加以夺取，就不能不造成损害。
 - [35]所以上帝命令人开拓土地，从而给人在这范围内将土地拨归私用的权力
+
+## Humanity Essay Format
