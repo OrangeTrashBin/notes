@@ -97,7 +97,7 @@ I pledge to be fair to my classmates and instructors by completing all of my aca
   | --- | --- |---
   | Preparing Registers | 0,1 | --- | 
   |Zero Register | 2 | --- |
-  | General Purpose Registers | 3-31| --- |
+  | General Purpose Registers | 3-15| --- |
 - Branch Operations
   
   There are three types of branching operation that is supported by our machine:
@@ -105,7 +105,7 @@ I pledge to be fair to my classmates and instructors by completing all of my aca
   - `bl`
   - `bg`
   
-  The address of these braches are calculated relatively, and the maximum distance supoorted is $$2^$$ lines, currently.
+  The address of these braches are calculated relatively, and the maximum distance supoorted is $$2^5$$ lines, currently.
 - Addressing
   - Jump(Direct)
     - Enabled: Yes
