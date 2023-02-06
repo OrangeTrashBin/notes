@@ -1,6 +1,16 @@
 # Essay 1
 
 ## TOC
+- [Essay 1](#essay-1)
+  - [TOC](#toc)
+  - [Prompt](#prompt)
+  - [Requirement](#requirement)
+  - [Preparation](#preparation)
+    - [Book Summary](#book-summary)
+    - [Related to the prompt](#related-to-the-prompt)
+    - [Structure](#structure)
+    - [Quotes: Religion](#quotes-religion)
+    - [Quotes: all](#quotes-all)
 
 ## Prompt
 - Write a thesis-based essay that responds to the following question: Which assumptions in 
@@ -25,6 +35,7 @@ Handbook. Improper citation will affect the essay’s grade. Your argument and i
 the text should not be based on external research. 
  
  ## Preparation
+
  ### Book Summary
  The Second Treatise of Government places sovereignty[至高无上的权利] into the hands of the people. Locke's fundamental argument is that people are equal and invested with natural rights in a state of nature in which they live free from outside rule. In the state of nature, natural law governs behavior, and each person has license to execute that law against someone who wrongs them by infringing[违背] on their rights. People take what they need from the earth, but hoard[收集] just enough to cover their needs. Eventually, people begin to trade their excess goods with each other, until they develop a common currency for barter[物物交换], or money. Money eliminates limits on the amount of property they can obtain (unlike food, money does not spoil), and they begin to gather estates[地产] around themselves and their families.
 
