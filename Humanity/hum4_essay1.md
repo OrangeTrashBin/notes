@@ -75,4 +75,23 @@ Conclusion: Sum up the main arguments of the essay and provide a final conclusio
 - [22] THE natural liberty of man is to be free from any superior power on earth, and not to be under the will or legislative authority of man, but to have only the law of nature for his rule.
     > 人的自然自由，就是不受人间任何上级权力的约束，不处在人们的意志或立法权之下，只以自然法作为他的准绳。
 
-- 
+### Quotes: all
+"The state of nature has a law of nature to govern it, which obliges every one: and reason, which is that law, teaches all mankind, who will but consult it, that being all equal and independent, no one ought to harm another in his life, health, liberty, or possessions." (Two Treatises of Government, Chapter 2)
+
+"The laws of nature are the foundation of all acquired rights, and the supreme law of all societies." (Two Treatises of Government, Chapter 2)
+
+"The natural liberty of man is to be free from any superior power on earth, and not to be under the will or legislative authority of man, but to have only the law of nature for his rule." (Two Treatises of Government, Chapter 4)
+
+"The power of the legislative, being derived from the people by a positive voluntary grant and institution, can have no other end, but the preservation of their property." (Two Treatises of Government, Chapter 2)
+
+"Where there is no law, there is no freedom." (Two Treatises of Government, Chapter 2)
+
+"No one can transfer to another more power than he has in himself, and no one has an absolute arbitrary power over himself, or over any other, to destroy his own life, or take away the life or property of another." (Two Treatises of Government, Chapter 2)
+
+"The end of law is not to abolish or restrain, but to preserve and enlarge freedom." (Two Treatises of Government, Chapter 3)
+
+"The power of the legislative, being derived from the people, by a positive voluntary grant and institution, can have no other end but the public good." (Two Treatises of Government, Chapter 2)
+
+"The power of the legislative, being derived from the people, is supreme over all other powers." (Two Treatises of Government, Chapter 2)
+
+"The great end of men's entering into society, being the enjoyment of their properties in peace and safety, and the preservation of their lives, liberties, and estates, which I call by the general name, property." (Two Treatises of Government, Chapter 2)
