@@ -421,6 +421,8 @@ void recoverMessage(unsigned int *originalMessage) {
       hsd 5 0
       ; r[6] = errorPos = 0
       hsd 6 0
+      ;
+      DEFINE MAX_DATA=15
 
 LOOP  
       ; r[0] = r[3] = i
