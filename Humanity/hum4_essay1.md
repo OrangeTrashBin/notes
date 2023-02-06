@@ -247,6 +247,7 @@ There are many ways to explain what makes a thesis complete. How you divide the 
 
 Let's work through an example:
 >Sample Prompt. Achilles is reputed to be the greatest hero in the Trojan War, but his behavior in the Iliad suggests he has become disenchanted by war. Does Achilles' behavior undermine the heroic ethic?
+
 - **Position**. There are two basic positions available to you in response to the prompt. Yes, Achilles undermines the heroic ethic. Or no, he does not. Your thesis does not need to argue that everything Achilles does undermines the heroic ethic (or does not), but your thesis should clearly work from one side or the other and avoid ambivalence like "sometimes he does, sometimes he doesn't." When taking a position, ask yourself a question like: On the whole, do Achilles' actions undermine the heroic ethic? Let's assume you decide yes.
 - **Claim**. There are many possibilities here. The essay will be about Achilles and the heroic ethic. The claim should connect the two through the specifics you will discuss.
 
